@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UnoEEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AX_PROPED_CONSU_ECO">
+    <Key>
+      <PropertyRef Name="id_insu" />
+    </Key>
+    <Property Name="id_insu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ref_prod" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="producto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="color_prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="id_color_prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="medida_prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="id_medida_prod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ref_insu" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="insumo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="um_insu" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="color_insu" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="id_color_insu" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="cant_insu" Type="Decimal" Precision="21" Scale="4" Nullable="false" />
+    <Property Name="tipo_insu" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AX_PROPED_CONSU_TIRAS">
+    <Key>
+      <PropertyRef Name="id_insu" />
+    </Key>
+    <Property Name="id_insu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ref_prod" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="producto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="color_prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="id_color_prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="medida_prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="id_medida_prod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cant_tiras" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="largo_tiras" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+    <Property Name="Lona" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="color" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AX_PROPED_DETALLE_PEDIDO">
+    <Key>
+      <PropertyRef Name="id_det_pedido" />
+    </Key>
+    <Property Name="id_det_pedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_pedido" Type="Int32" Nullable="false" />
+    <Property Name="id_cia" Type="Int32" />
+    <Property Name="id_Co" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_tipo_doc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Pedido" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="producto" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_ref" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="id_med" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+    <Property Name="id_ext_ref" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_color_ref" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="id_bodega" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_concepto" Type="Int32" />
+    <Property Name="id_motivo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ind_obsequio" Type="Int32" />
+    <Property Name="id_co_movto" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_entrega" Type="DateTime" Precision="0" />
+    <Property Name="num_dias_entrega" Type="Int32" />
+    <Property Name="id_lista_precio" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_unidad_med" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="cant_base" Type="Decimal" Precision="21" Scale="4" />
+    <Property Name="precio_unitario" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ind_impuestos_asumi" Type="Int32" />
+    <Property Name="ind_backorder" Type="Int32" />
+    <Property Name="ind_precio" Type="Int32" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AX_PROPED_PEDIDO" Relationship="Self.FK__AX_PROPED__id_pe__1AEDCC18" FromRole="AX_PROPED_DETALLE_PEDIDO" ToRole="AX_PROPED_PEDIDO" />
+  </EntityType>
+  <EntityType Name="AX_PROPED_OP">
+    <Key>
+      <PropertyRef Name="id_OP" />
+    </Key>
+    <Property Name="id_OP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Co" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_tipo_doc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="conse_docto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="tercero_planifica" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="notas" Type="String" MaxLength="110" FixedLength="false" Unicode="false" />
+    <Property Name="sucursal" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="cliente" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="pedido" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="producto" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="medida" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="fecha_entrega" Type="DateTime" Precision="0" />
+    <Property Name="lona" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="planificador" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AX_PROPED_OP_CONSUMO" Relationship="Self.FK__AX_PROPED__id_OP__4C501D82" FromRole="AX_PROPED_OP" ToRole="AX_PROPED_OP_CONSUMO" />
+    <NavigationProperty Name="AX_PROPED_OP_TIRAS" Relationship="Self.FK__AX_PROPED__id_OP__7181A231" FromRole="AX_PROPED_OP" ToRole="AX_PROPED_OP_TIRAS" />
+  </EntityType>
+  <EntityType Name="AX_PROPED_OP_CONSUMO">
+    <Key>
+      <PropertyRef Name="id_consu" />
+    </Key>
+    <Property Name="id_consu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_OP" Type="Int32" Nullable="false" />
+    <Property Name="num_op" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="id_tipo_doc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_Co" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bodega_insu" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ref_insu" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="insumo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="color_insu" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="cant_insu" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="uni_med" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AX_PROPED_OP" Relationship="Self.FK__AX_PROPED__id_OP__4C501D82" FromRole="AX_PROPED_OP_CONSUMO" ToRole="AX_PROPED_OP" />
+  </EntityType>
+  <EntityType Name="AX_PROPED_OP_TIRAS">
+    <Key>
+      <PropertyRef Name="id_tiras" />
+    </Key>
+    <Property Name="id_tiras" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_OP" Type="Int32" Nullable="false" />
+    <Property Name="num_op" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="id_tipo_doc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_Co" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lona" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="color" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="l_tiras" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="n_tiras" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="tmts_tiras" Type="Decimal" Precision="8" Scale="2" />
+    <NavigationProperty Name="AX_PROPED_OP" Relationship="Self.FK__AX_PROPED__id_OP__7181A231" FromRole="AX_PROPED_OP_TIRAS" ToRole="AX_PROPED_OP" />
+  </EntityType>
+  <EntityType Name="AX_PROPED_PEDIDO">
+    <Key>
+      <PropertyRef Name="id_pedido" />
+    </Key>
+    <Property Name="id_pedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_cia" Type="Int32" />
+    <Property Name="liquida_imp" Type="Int32" />
+    <Property Name="consecu_auto_reg" Type="Int32" />
+    <Property Name="ind_contacto" Type="Int32" />
+    <Property Name="id_Co" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_tipo_doc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Pedido" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="id_clase_doc" Type="Int32" />
+    <Property Name="ind_estado" Type="Int32" />
+    <Property Name="ind_backorder" Type="Int32" />
+    <Property Name="Cliente" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="razon_social" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="id_suc_cliente_fact" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="cliente_despachar" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_suc_cliente_desp" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_co_fact" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_entrega" Type="DateTime" Precision="0" />
+    <Property Name="num_dias_entrega" Type="Int32" />
+    <Property Name="orden_compra" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="id_moneda" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_moneda_base" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="tasa_conversion" Type="Int32" />
+    <Property Name="moneda_local" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="tasa_local" Type="Int32" />
+    <Property Name="id_cond_pago" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_estado_impresion" Type="Int32" />
+    <Property Name="notas" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="id_punto_envio" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="id_vendedor" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="direccion_1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="direccion_2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="direccion_3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="indicador_descuento" Type="Int32" />
+    <NavigationProperty Name="AX_PROPED_DETALLE_PEDIDO" Relationship="Self.FK__AX_PROPED__id_pe__1AEDCC18" FromRole="AX_PROPED_PEDIDO" ToRole="AX_PROPED_DETALLE_PEDIDO" />
+  </EntityType>
+  <Association Name="FK__AX_PROPED__id_pe__1AEDCC18">
+    <End Role="AX_PROPED_PEDIDO" Type="Self.AX_PROPED_PEDIDO" Multiplicity="1" />
+    <End Role="AX_PROPED_DETALLE_PEDIDO" Type="Self.AX_PROPED_DETALLE_PEDIDO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AX_PROPED_PEDIDO">
+        <PropertyRef Name="id_pedido" />
+      </Principal>
+      <Dependent Role="AX_PROPED_DETALLE_PEDIDO">
+        <PropertyRef Name="id_pedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AX_PROPED__id_OP__4C501D82">
+    <End Role="AX_PROPED_OP" Type="Self.AX_PROPED_OP" Multiplicity="1" />
+    <End Role="AX_PROPED_OP_CONSUMO" Type="Self.AX_PROPED_OP_CONSUMO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AX_PROPED_OP">
+        <PropertyRef Name="id_OP" />
+      </Principal>
+      <Dependent Role="AX_PROPED_OP_CONSUMO">
+        <PropertyRef Name="id_OP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AX_PROPED__id_OP__7181A231">
+    <End Role="AX_PROPED_OP" Type="Self.AX_PROPED_OP" Multiplicity="1" />
+    <End Role="AX_PROPED_OP_TIRAS" Type="Self.AX_PROPED_OP_TIRAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AX_PROPED_OP">
+        <PropertyRef Name="id_OP" />
+      </Principal>
+      <Dependent Role="AX_PROPED_OP_TIRAS">
+        <PropertyRef Name="id_OP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UnoEEEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AX_PROPED_CONSU_ECO" EntityType="Self.AX_PROPED_CONSU_ECO" />
+    <EntitySet Name="AX_PROPED_CONSU_TIRAS" EntityType="Self.AX_PROPED_CONSU_TIRAS" />
+    <EntitySet Name="AX_PROPED_DETALLE_PEDIDO" EntityType="Self.AX_PROPED_DETALLE_PEDIDO" />
+    <EntitySet Name="AX_PROPED_OP" EntityType="Self.AX_PROPED_OP" />
+    <EntitySet Name="AX_PROPED_OP_CONSUMO" EntityType="Self.AX_PROPED_OP_CONSUMO" />
+    <EntitySet Name="AX_PROPED_OP_TIRAS" EntityType="Self.AX_PROPED_OP_TIRAS" />
+    <EntitySet Name="AX_PROPED_PEDIDO" EntityType="Self.AX_PROPED_PEDIDO" />
+    <AssociationSet Name="FK__AX_PROPED__id_pe__1AEDCC18" Association="Self.FK__AX_PROPED__id_pe__1AEDCC18">
+      <End Role="AX_PROPED_PEDIDO" EntitySet="AX_PROPED_PEDIDO" />
+      <End Role="AX_PROPED_DETALLE_PEDIDO" EntitySet="AX_PROPED_DETALLE_PEDIDO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AX_PROPED__id_OP__4C501D82" Association="Self.FK__AX_PROPED__id_OP__4C501D82">
+      <End Role="AX_PROPED_OP" EntitySet="AX_PROPED_OP" />
+      <End Role="AX_PROPED_OP_CONSUMO" EntitySet="AX_PROPED_OP_CONSUMO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AX_PROPED__id_OP__7181A231" Association="Self.FK__AX_PROPED__id_OP__7181A231">
+      <End Role="AX_PROPED_OP" EntitySet="AX_PROPED_OP" />
+      <End Role="AX_PROPED_OP_TIRAS" EntitySet="AX_PROPED_OP_TIRAS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

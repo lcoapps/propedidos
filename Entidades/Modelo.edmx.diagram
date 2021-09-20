@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4d12d78a67fb49eb8b4a2d731b268039" Name="Diagram1">
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_CONSU_ECO" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_CONSU_TIRAS" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_DETALLE_PEDIDO" Width="2.375" PointX="8" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_OP" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_OP_CONSUMO" Width="2.125" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_OP_TIRAS" Width="2.125" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnoEEModel.AX_PROPED_PEDIDO" Width="1.75" PointX="5.5" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="UnoEEModel.FK__AX_PROPED__id_pe__1AEDCC18" ManuallyRouted="false" />
+        <AssociationConnector Association="UnoEEModel.FK__AX_PROPED__id_OP__4C501D82" ManuallyRouted="false" />
+        <AssociationConnector Association="UnoEEModel.FK__AX_PROPED__id_OP__7181A231" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UnoEEModelStoreContainer" CdmEntityContainer="UnoEEEntities">
+    <EntitySetMapping Name="AX_PROPED_CONSU_ECO">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_CONSU_ECO">
+        <MappingFragment StoreEntitySet="AX_PROPED_CONSU_ECO">
+          <ScalarProperty Name="id_insu" ColumnName="id_insu" />
+          <ScalarProperty Name="ref_prod" ColumnName="ref_prod" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="color_prod" ColumnName="color_prod" />
+          <ScalarProperty Name="id_color_prod" ColumnName="id_color_prod" />
+          <ScalarProperty Name="medida_prod" ColumnName="medida_prod" />
+          <ScalarProperty Name="id_medida_prod" ColumnName="id_medida_prod" />
+          <ScalarProperty Name="ref_insu" ColumnName="ref_insu" />
+          <ScalarProperty Name="insumo" ColumnName="insumo" />
+          <ScalarProperty Name="um_insu" ColumnName="um_insu" />
+          <ScalarProperty Name="color_insu" ColumnName="color_insu" />
+          <ScalarProperty Name="id_color_insu" ColumnName="id_color_insu" />
+          <ScalarProperty Name="cant_insu" ColumnName="cant_insu" />
+          <ScalarProperty Name="tipo_insu" ColumnName="tipo_insu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AX_PROPED_CONSU_TIRAS">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_CONSU_TIRAS">
+        <MappingFragment StoreEntitySet="AX_PROPED_CONSU_TIRAS">
+          <ScalarProperty Name="id_insu" ColumnName="id_insu" />
+          <ScalarProperty Name="ref_prod" ColumnName="ref_prod" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="color_prod" ColumnName="color_prod" />
+          <ScalarProperty Name="id_color_prod" ColumnName="id_color_prod" />
+          <ScalarProperty Name="medida_prod" ColumnName="medida_prod" />
+          <ScalarProperty Name="id_medida_prod" ColumnName="id_medida_prod" />
+          <ScalarProperty Name="cant_tiras" ColumnName="cant_tiras" />
+          <ScalarProperty Name="largo_tiras" ColumnName="largo_tiras" />
+          <ScalarProperty Name="Lona" ColumnName="Lona" />
+          <ScalarProperty Name="color" ColumnName="color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AX_PROPED_DETALLE_PEDIDO">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_DETALLE_PEDIDO">
+        <MappingFragment StoreEntitySet="AX_PROPED_DETALLE_PEDIDO">
+          <ScalarProperty Name="id_det_pedido" ColumnName="id_det_pedido" />
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="id_cia" ColumnName="id_cia" />
+          <ScalarProperty Name="id_Co" ColumnName="id_Co" />
+          <ScalarProperty Name="id_tipo_doc" ColumnName="id_tipo_doc" />
+          <ScalarProperty Name="Pedido" ColumnName="Pedido" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="id_ref" ColumnName="id_ref" />
+          <ScalarProperty Name="id_med" ColumnName="id_med" />
+          <ScalarProperty Name="id_ext_ref" ColumnName="id_ext_ref" />
+          <ScalarProperty Name="id_color_ref" ColumnName="id_color_ref" />
+          <ScalarProperty Name="id_bodega" ColumnName="id_bodega" />
+          <ScalarProperty Name="id_concepto" ColumnName="id_concepto" />
+          <ScalarProperty Name="id_motivo" ColumnName="id_motivo" />
+          <ScalarProperty Name="ind_obsequio" ColumnName="ind_obsequio" />
+          <ScalarProperty Name="id_co_movto" ColumnName="id_co_movto" />
+          <ScalarProperty Name="fecha_entrega" ColumnName="fecha_entrega" />
+          <ScalarProperty Name="num_dias_entrega" ColumnName="num_dias_entrega" />
+          <ScalarProperty Name="id_lista_precio" ColumnName="id_lista_precio" />
+          <ScalarProperty Name="id_unidad_med" ColumnName="id_unidad_med" />
+          <ScalarProperty Name="cant_base" ColumnName="cant_base" />
+          <ScalarProperty Name="precio_unitario" ColumnName="precio_unitario" />
+          <ScalarProperty Name="ind_impuestos_asumi" ColumnName="ind_impuestos_asumi" />
+          <ScalarProperty Name="ind_backorder" ColumnName="ind_backorder" />
+          <ScalarProperty Name="ind_precio" ColumnName="ind_precio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AX_PROPED_OP">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_OP">
+        <MappingFragment StoreEntitySet="AX_PROPED_OP">
+          <ScalarProperty Name="id_OP" ColumnName="id_OP" />
+          <ScalarProperty Name="id_Co" ColumnName="id_Co" />
+          <ScalarProperty Name="id_tipo_doc" ColumnName="id_tipo_doc" />
+          <ScalarProperty Name="conse_docto" ColumnName="conse_docto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="tercero_planifica" ColumnName="tercero_planifica" />
+          <ScalarProperty Name="notas" ColumnName="notas" />
+          <ScalarProperty Name="sucursal" ColumnName="sucursal" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="pedido" ColumnName="pedido" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="medida" ColumnName="medida" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="fecha_entrega" ColumnName="fecha_entrega" />
+          <ScalarProperty Name="lona" ColumnName="lona" />
+          <ScalarProperty Name="planificador" ColumnName="planificador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AX_PROPED_OP_CONSUMO">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_OP_CONSUMO">
+        <MappingFragment StoreEntitySet="AX_PROPED_OP_CONSUMO">
+          <ScalarProperty Name="id_consu" ColumnName="id_consu" />
+          <ScalarProperty Name="id_OP" ColumnName="id_OP" />
+          <ScalarProperty Name="num_op" ColumnName="num_op" />
+          <ScalarProperty Name="id_tipo_doc" ColumnName="id_tipo_doc" />
+          <ScalarProperty Name="id_Co" ColumnName="id_Co" />
+          <ScalarProperty Name="bodega_insu" ColumnName="bodega_insu" />
+          <ScalarProperty Name="ref_insu" ColumnName="ref_insu" />
+          <ScalarProperty Name="insumo" ColumnName="insumo" />
+          <ScalarProperty Name="color_insu" ColumnName="color_insu" />
+          <ScalarProperty Name="cant_insu" ColumnName="cant_insu" />
+          <ScalarProperty Name="uni_med" ColumnName="uni_med" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AX_PROPED_OP_TIRAS">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_OP_TIRAS">
+        <MappingFragment StoreEntitySet="AX_PROPED_OP_TIRAS">
+          <ScalarProperty Name="id_tiras" ColumnName="id_tiras" />
+          <ScalarProperty Name="id_OP" ColumnName="id_OP" />
+          <ScalarProperty Name="num_op" ColumnName="num_op" />
+          <ScalarProperty Name="id_tipo_doc" ColumnName="id_tipo_doc" />
+          <ScalarProperty Name="id_Co" ColumnName="id_Co" />
+          <ScalarProperty Name="lona" ColumnName="lona" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="l_tiras" ColumnName="l_tiras" />
+          <ScalarProperty Name="n_tiras" ColumnName="n_tiras" />
+          <ScalarProperty Name="tmts_tiras" ColumnName="tmts_tiras" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AX_PROPED_PEDIDO">
+      <EntityTypeMapping TypeName="UnoEEModel.AX_PROPED_PEDIDO">
+        <MappingFragment StoreEntitySet="AX_PROPED_PEDIDO">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="id_cia" ColumnName="id_cia" />
+          <ScalarProperty Name="liquida_imp" ColumnName="liquida_imp" />
+          <ScalarProperty Name="consecu_auto_reg" ColumnName="consecu_auto_reg" />
+          <ScalarProperty Name="ind_contacto" ColumnName="ind_contacto" />
+          <ScalarProperty Name="id_Co" ColumnName="id_Co" />
+          <ScalarProperty Name="id_tipo_doc" ColumnName="id_tipo_doc" />
+          <ScalarProperty Name="Pedido" ColumnName="Pedido" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="id_clase_doc" ColumnName="id_clase_doc" />
+          <ScalarProperty Name="ind_estado" ColumnName="ind_estado" />
+          <ScalarProperty Name="ind_backorder" ColumnName="ind_backorder" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+          <ScalarProperty Name="id_suc_cliente_fact" ColumnName="id_suc_cliente_fact" />
+          <ScalarProperty Name="cliente_despachar" ColumnName="cliente_despachar" />
+          <ScalarProperty Name="id_suc_cliente_desp" ColumnName="id_suc_cliente_desp" />
+          <ScalarProperty Name="id_co_fact" ColumnName="id_co_fact" />
+          <ScalarProperty Name="fecha_entrega" ColumnName="fecha_entrega" />
+          <ScalarProperty Name="num_dias_entrega" ColumnName="num_dias_entrega" />
+          <ScalarProperty Name="orden_compra" ColumnName="orden_compra" />
+          <ScalarProperty Name="id_moneda" ColumnName="id_moneda" />
+          <ScalarProperty Name="id_moneda_base" ColumnName="id_moneda_base" />
+          <ScalarProperty Name="tasa_conversion" ColumnName="tasa_conversion" />
+          <ScalarProperty Name="moneda_local" ColumnName="moneda_local" />
+          <ScalarProperty Name="tasa_local" ColumnName="tasa_local" />
+          <ScalarProperty Name="id_cond_pago" ColumnName="id_cond_pago" />
+          <ScalarProperty Name="id_estado_impresion" ColumnName="id_estado_impresion" />
+          <ScalarProperty Name="notas" ColumnName="notas" />
+          <ScalarProperty Name="id_punto_envio" ColumnName="id_punto_envio" />
+          <ScalarProperty Name="id_vendedor" ColumnName="id_vendedor" />
+          <ScalarProperty Name="direccion_1" ColumnName="direccion_1" />
+          <ScalarProperty Name="direccion_2" ColumnName="direccion_2" />
+          <ScalarProperty Name="direccion_3" ColumnName="direccion_3" />
+          <ScalarProperty Name="indicador_descuento" ColumnName="indicador_descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
